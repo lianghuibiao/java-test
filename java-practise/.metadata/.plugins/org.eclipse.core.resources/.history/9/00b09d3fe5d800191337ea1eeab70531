@@ -1,0 +1,23 @@
+package text;
+
+public class Max {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+     maxnum ma=new maxnum();
+     System.out.println(ma.maxnum(30, 4));
+    
+	}
+
+}
+class maxnum{
+	public double maxnum(double x,double y) {
+		if (x>y) {
+			return x;
+		}
+		else {
+			return y;
+		}
+		}
+	}
+

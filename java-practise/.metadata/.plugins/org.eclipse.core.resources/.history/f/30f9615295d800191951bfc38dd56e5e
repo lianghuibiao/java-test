@@ -1,0 +1,18 @@
+package text;
+
+import javax.swing.JFrame;
+
+//import java.awt.*;
+//import java.awt.event.*;
+//import javax.swing.*;
+
+public class Jftest extends JFrame {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+			//JFrame jf=new JFrame();
+		Jftest jf=new Jftest();
+		
+	}
+
+}

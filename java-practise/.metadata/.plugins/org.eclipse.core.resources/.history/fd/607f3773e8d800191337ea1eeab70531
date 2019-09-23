@@ -1,0 +1,31 @@
+package text;
+
+public class Retext {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+			int num=10;
+			
+	}
+
+}
+class Solution {
+    public boolean isPalindrome(int x) {
+        int a = x;
+        if (x < 0) {
+            return false;
+        }
+        if (x < 10) {
+            return true;
+        }
+        if (x % 10 == 0) {
+            return false; 
+        }
+        int t = 0;
+        while (x > 0) {
+            t = t * 10 + x % 10;
+            x /= 10;
+        }
+       return t == a;
+    }
+}

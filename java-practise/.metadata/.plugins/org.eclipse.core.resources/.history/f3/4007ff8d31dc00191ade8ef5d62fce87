@@ -1,0 +1,58 @@
+package practise;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.util.Locale;
+
+import javax.swing.*;
+
+public class PractiseFrist extends JFrame {
+	
+	
+	//设置窗口大小
+	public void setSize(int width, int height) {
+		// TODO 自动生成的方法存根
+		super.setSize(width, height);
+	}
+	
+	@Override
+	//设置窗口是否可见
+	public void setVisible(boolean b) {
+		// TODO 自动生成的方法存根
+		super.setVisible(b);
+	}
+	
+	@Override
+	public void setBackground(Color bgColor) {
+		// TODO 自动生成的方法存根
+		super.setBackground(bgColor);
+	}
+	
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+			/*
+			 * 创建窗体应用程序
+			 * 添加控件 
+			 * 加载包
+			 * 给控件添加功能
+			 * 实例化窗口要写在main方法里面
+			 * 
+			 * 
+			 * 
+			 * 
+			 * */
+		PractiseFrist pr=new PractiseFrist();
+		Container con=pr.getContentPane();
+		
+		con.setSize(500,500);
+		con.setVisible(true);
+		con.setBackground(Color.red);
+		
+	}
+
+	
+
+}
+class frame{
+	
+}

@@ -1,0 +1,19 @@
+package text;
+
+public class Stringtest {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+   //  System.out.println("cc");
+		str a=new str();
+		a.str("hello");
+	}
+	
+
+}
+class str{
+	public void str(String a) {
+		
+		System.out.println(a);
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将资源“practise/img/按钮5.png”重命名为“btn.png”" description="重命名资源“按钮5.png”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="img/按钮5.png" name="btn.png" stamp="1569122345186" updateReferences="true"/>
+</session>

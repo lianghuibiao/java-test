@@ -1,0 +1,25 @@
+package text;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		int a=10;
+		int b=10;
+		int c;
+		c=a+b;
+		/*if (c==20) {
+			for(int i=0;i<=10;i++) {
+				System.out.println("helloworld");
+				System.out.println(c);
+			}
+		}*/
+		//创建一个数组  遍历数组  
+	   int q[]= {1,2,3,4};
+	   for(int i=0;i<q.length;i++) {
+		   q[i]=q[i]+1;
+		   System.out.println(q[i]);
+	   }
+	}
+
+}

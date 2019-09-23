@@ -1,0 +1,20 @@
+package text;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		//这是Java练习的第一个练习  
+		int a =10;
+		int b=10;
+		//首先是类型声名  ,int double  string boolean float object null number undefant 
+      int[][] c={{12,2},{12,4}};
+     for(int i=0;i<=c.length;i++) {
+    	 for(int j=0;j<i;j++) {
+    	 System.out.println(c[i][j]);
+    	 }
+     }
+     }
+	}
+
+

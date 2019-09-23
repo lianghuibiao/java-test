@@ -1,0 +1,44 @@
+package practise;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Image;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class PractiseFifth extends JFrame {
+	
+
+	Image image=Toolkit.getDefaultToolkit().getImage("img/btn.png");
+	
+	
+	//设置窗口
+	void frame() {
+		//设置可见
+		setVisible(true);
+		//设置大小
+		setSize(300, 400);
+		setBackground(Color.red);
+		setLocation(200,200);
+		
+		
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		PractiseFifth jf=new PractiseFifth();
+		Container con=jf.getContentPane();
+		JLabel jl=new JLabel();
+		jl.setSize(100, 100);
+		jl.setBackground(Color.blue);
+		jf.frame();
+		
+		con.add(jl);
+	}
+
+}

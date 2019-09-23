@@ -1,0 +1,14 @@
+package text;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		//这是Java练习的第一个练习  
+		int a =10;
+		int b=10;
+		//首先是类型声名  int double  string boolean float object null number undefant 
+System.out.println(a+b);
+	}
+
+}

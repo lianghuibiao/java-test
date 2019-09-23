@@ -1,0 +1,42 @@
+package text;
+
+import java.awt.Button;
+import java.awt.Color;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+//import java.awt.*;
+//import java.awt.event.*;
+//import javax.swing.*;
+
+public class Jftest extends JFrame {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+			//JFrame jf=new JFrame();
+		Jftest jf=new Jftest();
+		JButton btn=new JButton("第一个按钮");
+		btn.setVisible(true);
+		//初始化窗口  实例化  可视化
+	jf.setVisible(true);
+	
+	jf.add(btn);
+	btn.setBounds(30,30,100,100);
+	//jf.getWidth();
+	}
+	//封装了窗体方法  
+	public Jftest() {
+		// TODO 自动生成的构造函数存根
+		
+		//初始化标题  
+		setTitle("第一个窗体");
+		//初始化窗体大小  
+		setBounds(100, 100, 600, 400);
+		setBackground(Color.YELLOW);
+	
+	}
+	
+		
+	
+}

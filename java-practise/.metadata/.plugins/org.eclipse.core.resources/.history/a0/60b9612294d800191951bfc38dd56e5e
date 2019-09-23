@@ -1,0 +1,12 @@
+package text;
+
+import javax.swing.JFrame;
+
+public class Jftest {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+			JFrame jf=new JFrame();
+	}
+
+}

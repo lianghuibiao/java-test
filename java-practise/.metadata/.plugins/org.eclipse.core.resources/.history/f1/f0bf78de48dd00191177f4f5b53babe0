@@ -1,0 +1,61 @@
+package practise;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Image;
+import java.awt.Toolkit;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
+public class PractiseFifth extends JFrame {
+	
+
+	Image image=Toolkit.getDefaultToolkit().getImage("img/btn.png");
+	
+	
+	//设置窗口
+	void frame() {
+		//设置可见
+		setVisible(true);
+		//设置大小
+		setSize(300, 400);
+		//设置背景颜色
+		setBackground(Color.red);
+		//设置以计算机左上角开始的位置
+		setLocation(200,200);
+		
+		
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		//实例化窗口
+		PractiseFifth jf=new PractiseFifth();
+		Container con=jf.getContentPane();
+		//这个控件是没有办法设置颜色的
+		JLabel jl=new JLabel("hello");
+		//实例化一个按钮
+		JButton btn=new JButton("按钮");
+		jl.setSize(100, 100);
+		jl.setBackground(Color.blue);
+		btn.setSize(100,50);
+		BorderLayout bb=new BorderLayout();  //边界布局，设置控件垂直居中
+		jl.setLayout(bb);
+		//导入包
+		jl.setHorizontalAlignment(SwingConstants.CENTER);  //设置控件左右居中
+		jl.setFont(new java.awt.Font("黑体",1,12));//设置字体为黑体，字体大小为12，1代表样式(1是粗体，0是平常的
+		jl.setForeground(Color.red);//设置字体颜色
+		
+		jf.frame();
+		con.add(btn);
+		con.add(jl);
+	}
+
+}

@@ -1,0 +1,11 @@
+package text;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		//char a=A;
+		System.out.println((char)66);
+	}
+
+}

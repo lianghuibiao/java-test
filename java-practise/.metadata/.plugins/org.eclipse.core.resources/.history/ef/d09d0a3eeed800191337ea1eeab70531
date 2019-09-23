@@ -1,0 +1,15 @@
+package text;
+
+public class Retext {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+			int num=123;
+			//num%100%10 获取最后一位
+			//num%100/10倒数第二位
+			//num/100%10
+			
+			System.out.println(num/100%100+" "+num%100/10+" "+num%100%10);
+	}
+
+}

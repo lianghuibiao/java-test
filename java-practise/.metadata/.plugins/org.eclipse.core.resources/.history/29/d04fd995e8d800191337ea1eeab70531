@@ -1,0 +1,13 @@
+package text;
+
+public class Retext {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+			int num=132;
+			//num%10 获取最后一位
+			
+			System.out.println(num%100);
+	}
+
+}

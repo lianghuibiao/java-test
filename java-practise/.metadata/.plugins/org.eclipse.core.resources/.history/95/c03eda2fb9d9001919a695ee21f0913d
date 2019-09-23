@@ -1,0 +1,16 @@
+package text;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		//char a=A;
+		//练习   输出a-z
+		for (int i =65; i <= 89; i++) {
+			
+			System.out.println((char)i);
+		}
+		
+	}
+
+}

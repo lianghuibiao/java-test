@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="将资源“ballGame/img/球.png”重命名为“ball.png”" description="重命名资源“球.png”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="img/球.png" name="ball.png" stamp="1568698902935" updateReferences="true"/>&#x0A;<refactoring comment="将资源“ballGame/img/桌面.png”重命名为“desk.png”" description="重命名资源“桌面.png”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="img/桌面.png" name="desk.png" stamp="1568698911230" updateReferences="true"/>
+</session>

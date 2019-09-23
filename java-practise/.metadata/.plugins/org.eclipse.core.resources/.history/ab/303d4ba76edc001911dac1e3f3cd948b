@@ -1,0 +1,67 @@
+package practise;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+
+public class PractiseThird extends JFrame {
+	Image bull=Toolkit.getDefaultToolkit().getImage("planeImg/bullet.jpg");
+	Image map=Toolkit.getDefaultToolkit().getImage("planeImg/WOOD.GIF");
+	/*
+	 * 
+	 * 加载画布背景利用背景向上移动
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * */
+	
+	//窗体函数
+	double y=500;
+	public void paint(Graphics g) {
+		//加载棋盘 
+		
+		
+		//int t=0;
+		//int b=0;
+		//加载第一排的棋子
+		
+		g.drawImage(map,0,0,null);
+		g.drawImage(bull,200,(int)y,null);
+		y--;
+			
+	}
+	void frame() {
+		setVisible(true);
+		setSize(400,600);
+		setLocation(400, 200);
+		//setBackground(Color.blue);
+		while(true) {
+			repaint();
+			try {
+				//四十毫秒
+				Thread.sleep(40);  //一秒20次
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
+		}
+		
+	}
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+      PractiseThird jf=new PractiseThird();
+      jf.frame();
+	}
+
+}

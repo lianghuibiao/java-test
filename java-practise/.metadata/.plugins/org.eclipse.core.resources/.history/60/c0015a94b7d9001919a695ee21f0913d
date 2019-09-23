@@ -1,0 +1,20 @@
+package text;
+import java.awt.*;
+import java.util.Scanner;
+
+
+
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		Scanner sc=new Scanner(System.in);
+		//scanner 方法允许输入
+		String name;
+		name=sc.nextLine();
+		System.out.println("输入名字");
+		System.out.println(name);
+	}
+
+}

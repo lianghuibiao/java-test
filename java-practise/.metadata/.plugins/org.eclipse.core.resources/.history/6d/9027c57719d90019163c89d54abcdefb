@@ -1,0 +1,73 @@
+package ballGame;
+import java.awt.*;
+import javax.swing.*;
+
+
+
+public class BallGame extends JFrame {
+	//加载图片
+	Image ball=Toolkit.getDefaultToolkit().getImage("img/ball.png");
+	Image ball1=Toolkit.getDefaultToolkit().getImage("img/ball.png");
+	Image desk=Toolkit.getDefaultToolkit().getImage("img/desk.png");
+	//画窗口方法
+	double x=75;
+	double y=80;
+	double degree =3.14/3;
+	boolean right=true;
+	public void paint(Graphics g) {
+		g.drawImage(desk,-75,-250,null);
+		g.drawImage(ball,(int)x,(int)y,30,30,null);
+		g.drawImage(ball1,0,0,30,30,null);
+		x=x+10*Math.cos(degree);
+		y=y+10*Math.sin(degree);
+		if (y>500-110||y<80) {
+			degree=-degree;
+		}
+		if (x<70||x>760) {
+			degree=3.14-degree;
+		}
+		/*if(right) {
+			x=x+10;
+		}else {
+			x=x-10;
+		}
+		if (x>760) {
+			right=false;
+		}
+		if (x<0+80) {
+			right=true;
+		}*/
+		//double a=3.14/3;
+		//Math.sin(a);
+		//System.out.println(a);
+		
+	}
+	
+	//窗口加载
+	void Frame() {
+		setTitle("台球");
+		setSize(870,480);
+		setLocation(200,200);
+		setVisible(true);
+		while(true) {
+			repaint();
+			try {
+				Thread.sleep(40);  //一秒20次
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
+		}
+		
+		
+	}
+	  
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		BallGame ba=new BallGame();
+		ba.Frame();
+	
+	
+	}
+
+}

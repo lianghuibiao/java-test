@@ -1,0 +1,44 @@
+package practise;
+
+import java.awt.Container;
+
+import javax.swing.*;
+
+public class PractiseFrist extends JFrame {
+	
+	public void setSize(int width, int height) {
+		// TODO 自动生成的方法存根
+		super.setSize(width, height);
+	}
+	
+	@Override
+	public void setVisible(boolean b) {
+		// TODO 自动生成的方法存根
+		super.setVisible(b);
+	}
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+			/*
+			 * 创建窗体应用程序
+			 * 添加控件 
+			 * 加载包
+			 * 给控件添加功能
+			 * 实例化窗口要写在main方法里面
+			 * 
+			 * 
+			 * 
+			 * 
+			 * */
+		PractiseFrist pr=new PractiseFrist();
+		Container con=pr.getContentPane();
+		
+		pr.setSize(500,500);
+		pr.setVisible(true);
+	}
+	
+
+}
+class frame{
+	
+}

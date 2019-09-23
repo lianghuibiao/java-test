@@ -1,0 +1,21 @@
+package text;
+
+public class Stringtest {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+   //  System.out.println("cc");
+		str st=new str();
+		System.out.println(st.str("hellojava"));
+		
+	}
+	
+
+}
+//创建一个类  实例化类对象
+class str{
+	public String str(String a) {
+		return a;
+		
+	}
+}

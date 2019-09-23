@@ -1,0 +1,55 @@
+package practise;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+
+@SuppressWarnings("serial")
+public class PractiseFourth extends JFrame {    
+    private myPanle1 myPanle;    
+    public static void main(String[] args) {
+    	PractiseFourth Test = new PractiseFourth();
+    }
+    
+    public PractiseFourth() {
+        myPanle = new myPanle1();
+        this.add(myPanle);
+        this.addKeyListener(myPanle);
+        this.setSize(400, 300);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setVisible(true);
+    }
+
+}
+
+@SuppressWarnings("serial")
+class myPanle1 extends JPanel implements KeyListener{
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+        // TODO Auto-generated method stub
+    	 if (e.getKeyCode()==37){
+             System.out.println("k¸ñ");
+         } 
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        
+            System.out.println(e.getKeyCode());
+        if (e.getKeyCode()==32){
+            System.out.println("¿Õa");
+        } 
+       
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+    	 if (e.getKeyCode()==37){
+             System.out.println("k¸ñ");
+         } 
+    }
+
+}
